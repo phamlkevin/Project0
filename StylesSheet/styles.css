@@ -2,7 +2,11 @@
 
 }
 
-.row > div {
+#banner{
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+.row> div {
     padding: 20px;
     background-color:lightslategray;
     border: 2px solid black;
@@ -17,10 +21,15 @@
     text-align: center;
 }
 
+.logo{
+
+}
+
 .resumeLink{
     text-align: center;
     padding: 20px;
     margin: 20px;
+    border: 5px solid red;
 }
 
 table, th, td{
@@ -31,4 +40,26 @@ table, th, td{
 
 th{
     text-align: center;
+}
+
+.nav{
+    background-color: black;
+}
+
+.label{
+    margin-bottom: 10%;
+}
+
+p::selection{
+    color:white;
+    background-color: black;
+
+}
+
+a:hover{
+    background-color: yellow;
+}
+
+a{
+    cursor: none;
 }
