@@ -1,0 +1,48 @@
+// nesting
+div {
+    font-size: 18px;
+
+    h6 {
+        color:black;
+    }
+
+    ul {
+        color: blue;
+    }
+
+    ol {
+        color:black;
+    }
+}
+
+//inheritance
+%message{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 10px;
+}
+
+.sports{
+    @extend %message;
+    background-color: peru;
+}
+
+.games{
+    @extend %message;
+    background-color: slategrey;
+}
+
+.anime{
+    @extend %message;
+    background-color: darkmagenta;
+}
+
+// element> element selector 
+div > h6 { 
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}

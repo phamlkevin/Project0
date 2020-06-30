@@ -1,0 +1,41 @@
+div {
+  font-size: 18px;
+}
+div h6 {
+  color: black;
+}
+div ul {
+  color: blue;
+}
+div ol {
+  color: black;
+}
+
+.anime, .games, .sports {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border: 2px solid black;
+  padding: 20px;
+  margin: 10px;
+}
+
+.sports {
+  background-color: peru;
+}
+
+.games {
+  background-color: slategrey;
+}
+
+.anime {
+  background-color: darkmagenta;
+}
+
+div > h6 {
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=hobbies.css.map */

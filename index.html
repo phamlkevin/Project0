@@ -58,12 +58,31 @@
                 fosters creativity and collaboration. Committed to integrating technology and research in the
                 biotech
                 industry to improve quality of life.</p>
-            <div class='logo'>
+
+            <p>Improvements coming soon! &#128077</p>
+
+            <div id='funWall'>
+                <form id='wallForm'>
+                    <br>Enter your name!<br>
+                    <input type='text' name='fullName' placeholder="Full Name">
+                    <p>
+                        <button> Submit</button> <!-- <input type='submit' value='submit'> -->
+                    </p>
+                </form>
+                <p id="result"> </p>
             </div>
+
+            <script>
+                var form = document.getElementById('wallForm');
+                form.onsubmit = function (e) {
+                    e.preventDefault();
+                    var result = document.getElementById('result');
+                    result.innerHTML = "Hi, " + form.fullName.value + "! I hope you enjoy my webpage!";
+                    form.reset();
+                };
+            </script>
         </div>
     </div>
-
-
 </body>
 
 </html>

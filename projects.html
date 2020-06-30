@@ -4,13 +4,24 @@
 <head>
     <title>Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="StylesSheet/styles.css">
-    <style>
 
-    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("img").click(function () {
+                $(this).hide();
+            })
+            $("#show").click(function () {
+                $("img").show();
+            })
+        });
+    </script>
+
 </head>
 
 <!-- #############################################Navigation Bar################################################################# -->
@@ -40,6 +51,34 @@
 
 
     <body>
+
+        <div id='game'>
+
+            <body>
+                <h3>Click game</h3><br>
+                <table>
+                    <tr>
+                        <td><img class="spider1" src="images/Spider.jpeg" alt="Spiderman" width="100" height="100"></td>
+                        <td><img class="spider2" src="images/Spider.jpeg" alt="Spiderman" width="100" height="100"></td>
+                        <td><img class="spider3" src="images/Spider.jpeg" alt="Spiderman" width="100" height="100"></td>
+                        <td><img class="spider4" src="images/Spider.jpeg" alt="Spiderman" width="100" height="100"></td>
+                    </tr>
+                    <tr>
+                        <td><img class="spider5" src="images/Spider.jpeg" alt="Spiderman" width="100" height="100"></td>
+                        <td><img class="spider6" src="images/Spider.jpeg" alt="Spiderman" width="100" height="100"></td>
+                        <td><img class="spider7" src="images/Spider.jpeg" alt="Spiderman" width="100" height="100"></td>
+                        <td><img class="spider8" src="images/Spider.jpeg" alt="Spiderman" width="100" height="100"></td>
+                    </tr>
+                </table>
+                <div>
+                    <br><button id="show">RESTORE</button>
+                </div>
+        </div>
+
+        <div id='chinaChen'>
+
+
+        </div>
 
 
 
